@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirrored Boxes</title>
+  <link rel="stylesheet" href="Kaleidoscope.css">
+</head>
+<body>
+  <div id="leftSection">
+    <div id="title"> Kaleidoscope of Words </div> 
+    <div id="body"> Let the kaleidoscope unfold, creating enchanting <br> patterns that reflect the beauty of language and the <br> richness of sensory perception. </div> 
+    <div id = "instructions"> Hit the space bar to mix things </div>
+  </div>
+
+  <div id="rightSection">
+    <!-- Container for Mirrored Boxes -->
+    <div class="mirrorContainer">
+
+      <!-- Original Box -->
+      <div class="mirrorBox" id="outerBox">
+        <div id="wordBox"></div>
+      </div>
+
+      <!-- Top-Right Mirror Box -->
+      <div class="mirrorBox mirroredX"></div>
+
+      <!-- Bottom-Left Mirror Box -->
+      <div class="mirrorBox mirroredY"></div>
+
+      <!-- Bottom-Right Mirror Box -->
+      <div class="mirrorBox mirroredX mirroredY"></div>
+
+    </div>
+  </div>
+  <script src="Kaleidoscope.js"></script>
+</body>
+</html>
